@@ -34,5 +34,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   hyundai_marketing: #THIS SHOULD BE THE SAME AS 'HYUNDAI_MARKETING' WHERE NAME AT TOP. NO HYPHENS
       # Applies to all files under models/example/
-      example:
-          materialized: view
+      +materialized: table
+      concats:
+          +materialized: view
