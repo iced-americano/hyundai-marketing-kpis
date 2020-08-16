@@ -1,0 +1,41 @@
+
+version: 2
+
+models:
+    - name: hva_floodlights
+      description: "A model that includes hva floodlight information"
+      columns:
+          - name: placement
+            description: "Placement name"
+            tests:
+                - not_null
+          - name: ds
+            description: "Date of the placement"
+            tests:
+                - not_null
+          - name: find_a_dealer_hvas
+            description: "HVA floodlight #1"
+          - name: byo_complete_hvas
+            description: "HVA floodlight #2"
+          - name: payment_calculator_hvas
+            description: "HVA floodlight #3. This is broken and should be excluded from calculation."
+          - name: search_inventory_results_hvas
+            description: "HVA floodlight #4"
+          - name: edmunds_configurator_summary_hvas
+            description: "HVA floodlight #5"
+          - name: edmunds_inventory_search_hvas
+            description: "HVA floodlight #6"
+          - name: edmunds_find_a_dealer_hvas
+            description: "HVA floodlight #7"
+          - name: kbb_build_price_summary_hvas
+            description: "HVA floodlight #8"
+          - name: all_leads_hvas
+            description: "HVA floodlight #9"
+          - name: kbb_lead_submission_form_hvas
+            description: "HVA floodlight #10. This is broken and should be excluded from calculation."
+          - name: kbb_request_a_quote_hvas
+            description: "HVA floodlight #11"
+          - name: edmunds_lead_submission_hvas
+            description: "HVA floodlight #12"
+          - name: edmunds_request_a_quote
+            description: "HVA floodlight #13"
